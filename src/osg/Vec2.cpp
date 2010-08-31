@@ -11,7 +11,7 @@ extern "C"
     // disposer
     void osg_Vec2_dispose(osg::Vec2* ptr)
     {
-        free ptr;
+        delete ptr;
     }
     
     // setter
@@ -25,11 +25,11 @@ extern "C"
     }
     
     // getter
-    double osg_Vec2_get_x(osg::Vec2* ptr)
+    float osg_Vec2_get_x(osg::Vec2* ptr)
     {
         return ptr->_v[0];
     }
-    double osg_Vec2_get_y(osg::Vec2* ptr)
+    float osg_Vec2_get_y(osg::Vec2* ptr)
     {
         return ptr->_v[1];
     }
