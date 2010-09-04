@@ -51,7 +51,7 @@
 (defun generate-osg-db-binding ()
   (generate-binding*
    :osg-db-cffi-bindings
-   '("osgDB/RealFile")
+   '("osgDB/ReadFile")
    :working-directory #p"./"
    ))
 
